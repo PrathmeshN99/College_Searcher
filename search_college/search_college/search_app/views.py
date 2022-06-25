@@ -9,7 +9,7 @@ def home(request):
 def start(request):
     colleges = cutoff.objects.all().order_by('-open_percentile')
     context = {'colleges' : colleges}
-    return render(request,'start.html',context=context)
+    return render(request,'start.html',context=context) #replace 'testing.html' with 'start.html' 
 
 def search_colleges(request):
     item_searched = 0
